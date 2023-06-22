@@ -6,7 +6,7 @@ import re
 from datetime import datetime
 
 env.user = 'ubuntu'
-env.hosts = ['3.80.74.138', '3.88.68.105']
+env.hosts = ['52.23.205.211', '54.167.116.166']
 
 
 def do_pack():
@@ -69,7 +69,7 @@ def do_deploy(archive_path):
     #  /data/web_static/current on the web server,
     #     linked to the new version of your code
     #     (/data/web_static/releases/<archive filename without extension>)
-    result = run("ln -s /data/web_static/releases/{}/ /data/web_static/current"
+    result = run("ln -s /data/web_static/releases/{}/ /data/web_stati
                  .format(archive_filename))
     if result.failed:
         return False
