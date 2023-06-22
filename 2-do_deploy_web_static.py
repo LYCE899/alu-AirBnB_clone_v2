@@ -69,7 +69,7 @@ def do_deploy(archive_path):
     #  /data/web_static/current on the web server,
     #     linked to the new version of your code
     #     (/data/web_static/releases/<archive filename without extension>)
-    result = run("ln -s /data/web_static/releases/{}/ /data/web_stati
+    result = run("ln -s /data/web_static/releases/{}/ /data/web_static/current"
                  .format(archive_filename))
     if result.failed:
         return False
